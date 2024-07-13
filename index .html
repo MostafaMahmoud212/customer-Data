@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link type="text/css" href="./CSS/skitter.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./image/download.png">  
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Staff chart</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="input-group my-5 mx-auto">
+      <span class="input-group-text">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+        <label for="floatingInputGroup1">search</label>
+      </div>
+    </div>
+
+    <table class="table table-primary text-center ">
+      <thead>
+          <tr class="text-center">
+              <th class="text-white fs-5">Name</th>
+              <th class="text-white fs-5">Total Transaction Amount</th>
+              <th class="text-white fs-5">Transactions per day</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="noResults" style="display: none;" class="text-center">
+    <p class="fs-1">No results found</p>
+    <img src="./image/no-data.png" alt="No Results">
+  </div>
+
+
+        <!-- canvas.Js   -->
+
+  <div class="container">
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+  </div>
+
+
+
+  <script src="./JS/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
