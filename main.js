@@ -181,5 +181,5 @@ $(document).ready(function () {
         search({ target: { value: $("#floatingInputGroup1").val() } }); //  تمرير قيمة  input  بشكل صريح
       });
   })
-  .catch(error =>  document.html(`<p class='text-center fs-2'>${error}</p>`));
+  .catch(error => console.error('حدث خطأ أثناء تحميل البيانات:', error));
 });
